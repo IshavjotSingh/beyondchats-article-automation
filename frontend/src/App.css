@@ -1,0 +1,123 @@
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- CONTAINER ---------- */
+/* Title at top, card centered below */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- TITLE ---------- */
+.title {
+  font-size: 2.6rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #38bdf8;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- CARD ---------- */
+.card {
+  width: 100%;
+  max-width: 850px;
+  background: #020617;
+  border-radius: 22px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Floating hover */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------- HEADINGS ---------- */
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #facc15;
+}
+
+/* ---------- SECTION TITLES ---------- */
+.section-title {
+  margin-top: 26px;
+  margin-bottom: 8px;
+  color: #a5f3fc;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+/* ---------- CONTENT ---------- */
+.content {
+  white-space: pre-line;
+  line-height: 1.7;
+  color: #e5e7eb;
+}
+
+/* ---------- REFERENCES ---------- */
+.references {
+  margin-top: 30px;
+}
+
+.references ul {
+  padding-left: 22px;
+}
+
+.references li {
+  margin-bottom: 8px;
+}
+
+/* Interactive links */
+.references a {
+  color: #60a5fa;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.references a:hover {
+  transform: scale(1.1);
+  color: #bae6fd;
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.9);
+}
+
+/* ---------- STATUS BADGE ---------- */
+.badge {
+  display: block;
+  margin: 35px auto 0;
+  padding: 10px 48px;
+  width: fit-content;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: black;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+/* ---------- LOAD ANIMATION ---------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
